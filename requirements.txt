@@ -1,0 +1,10 @@
+scikit-learn
+matplotlib
+numpy
+pandas
+python-dateutil
+sklearn
+Jinja2
+pylab-sdk
+seaborn
+gunicorn
