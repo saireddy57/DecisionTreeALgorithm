@@ -1,20 +1,20 @@
 from flask import Flask,render_template,jsonify,request
-import numpy as np
-import pandas as pd
-import seaborn as sb
-import matplotlib.pyplot as plt
-import sklearn
-from pandas import Series, DataFrame
-# from pylab import rcParams
-from sklearn import preprocessing
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split,GridSearchCV
-from sklearn import metrics
-from sklearn.metrics import classification_report
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import LabelEncoder,OneHotEncoder
-# from sklearn.externals import joblib
+# import numpy as np
+# import pandas as pd
+# import seaborn as sb
+# import matplotlib.pyplot as plt
+# import sklearn
+# from pandas import Series, DataFrame
+# # from pylab import rcParams
+# from sklearn import preprocessing
+# from sklearn.linear_model import LogisticRegression
+# from sklearn.model_selection import train_test_split,GridSearchCV
+# from sklearn import metrics
+# from sklearn.metrics import classification_report
+# from sklearn.tree import DecisionTreeClassifier
+# from sklearn.preprocessing import StandardScaler
+# from sklearn.preprocessing import LabelEncoder,OneHotEncoder
+# # from sklearn.externals import joblib
 import pickle
 
 app = Flask(__name__)
@@ -100,7 +100,7 @@ app = Flask(__name__)
 #
 # model_load = pickle.dump(new_model_tuning,open('titanic_survivied_data','wb'))
 
-@app.route('/', methods = ['post','get'])
+@app.route('/', methods = ['POST','GET'])
 def home():
     return render_template('index.html')
 
