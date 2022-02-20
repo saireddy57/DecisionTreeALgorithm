@@ -8,3 +8,4 @@ Jinja2
 pylab-sdk
 seaborn
 gunicorn
+flask
